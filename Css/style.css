@@ -388,17 +388,85 @@ body {
   flex-direction: row;
 }
 
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
-
-  body {
-    font-size: 16px;
-  }
-}
-
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  #hero,
+  #second {
+    min-height: 100vh;
+    height: auto;
+  }
+
+  #second {
+    padding: 100px 20px;
+  }
+
+  #heading h1 {
+    margin-left: 20px;
+    font-size: 14vw;
+  }
+
+  #heading #secondh1 {
+    margin-left: 20px;
+  }
+
+  .blocktext h5 {
+    font-size: 14px;
+  }
+
+  #subheadings {
+    margin-top: 80px;
+    padding-right: 20px;
+  }
+
+  .elem h1 {
+    font-size: 9vw;
+    padding: 2vw 0;
+  }
+
+  #nav {
+    padding: 20px;
+  }
+
+  #herofooter {
+    position: relative;
+    bottom: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 40px;
+  }
+
+  #herofooter > a:nth-of-type(2) {
+    padding-right: 0;
+  }
+
+  #footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #about {
+    flex-direction: column;
+    padding: 20vw 10vw;
+    text-align: center;
+    gap: 30px;
+  }
+
+  #textabout {
+    width: 100%;
+  }
+
+  .marquee {
+    margin-top: 20vw;
+  }
 }
